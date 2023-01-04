@@ -1,0 +1,26 @@
+while True:
+    # Mostrar el menú al usuario
+    print("1. Convertir de grados Celsius a Fahrenheit")
+    print("2. Convertir de grados Fahrenheit a Celsius")
+    print("3. Salir")
+    opcion = input("Ingrese una opción (1-3): ")
+
+    # Convertir de grados Celsius a Fahrenheit
+    if opcion == "1":
+        C = float(input("Ingrese la temperatura en grados Celsius: "))
+        F = C * 9/5 + 32
+        print(f"{C} grados Celsius son {F} grados Fahrenheit")
+
+    # Convertir de grados Fahrenheit a Celsius
+    elif opcion == "2":
+        F = float(input("Ingrese la temperatura en grados Fahrenheit: "))
+        C = (F - 32) * 5/9
+        print(f"{F} grados Fahrenheit son {C} grados Celsius")
+
+    # Salir del programa
+    elif opcion == "3":
+        break
+
+    # Opción inválida
+    else:
+        print("Opción inválida. Inténtelo de nuevo.")

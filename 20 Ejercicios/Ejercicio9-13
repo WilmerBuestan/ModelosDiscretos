@@ -1,0 +1,32 @@
+'''
+Este código solicita al usuario que ingrese su nombre y luego utiliza 
+la función print para mostrar un mensaje de bienvenida al programa con 
+el nombre del usuario.
+
+La función input se utiliza para solicitar al usuario que ingrese algún 
+tipo de información, mientras que la función print se utiliza para mostrar 
+información en la pantalla.
+
+También puedes utilizar el formateo de cadena para mostrar el nombre del 
+usuario en el mensaje de bienvenida. La sintaxis f"Hola, {nombre} ¡Bienvenido 
+al programa!" se conoce como formateo de cadena f y permite insertar valores en 
+una cadena de texto. En este caso, se está insertando el valor de la variable 
+nombre en el mensaje de bienvenida.
+
+'''
+def Ingreso_nombre():
+    '''
+    Funcion que pide el nombre al usuario
+    Parametros:
+    ------------------------------------
+         - nombre : double
+    Retorna:
+    ------------------------------------
+   nombre : double
+    '''      
+    nombre = input("Hola, ¿cómo te llamas? ")
+    return(nombre)
+#imprimimos el resultado
+if __name__ == "__main__":
+    nombre = Ingreso_nombre()  
+    print(f"Hola, {nombre} ¡Bienvenido al programa!")

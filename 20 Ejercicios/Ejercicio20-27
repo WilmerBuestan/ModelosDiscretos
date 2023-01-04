@@ -1,0 +1,33 @@
+def Ingresar_Datos():
+    
+    # Pide al usuario que ingrese la base y la altura del triángulo
+    base = float(input("Ingresa la base del triángulo: "))
+    altura = float(input("Ingresa la altura del triángulo: "))
+    return(base,altura)
+
+def Calculo(base,altura):
+    
+    # Calcula el área del triángulo
+    area = (base * altura) / 2
+    return(area)
+
+if __name__ == "__main__":
+    base,altura = Ingresar_Datos()
+    area = Calculo(base,altura)
+    
+    print("El area del triangulo es: ",round(area,2))
+
+
+
+
+
+
+'''
+Para calcular el área de un triángulo en Python, puedes seguir los siguientes pasos:
+
+Pide al usuario que ingrese la base y la altura del triángulo. Puedes hacerlo utilizando la función input().
+Convierte los valores de base y altura a números flotantes utilizando la función float().
+Calcula el área del triángulo utilizando la fórmula (base * altura) / 2.
+Imprime el área del triángulo utilizando la función print().
+
+'''

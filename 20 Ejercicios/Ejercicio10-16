@@ -1,0 +1,39 @@
+
+import math
+def Valor_Circulo():
+    
+    radio = float(input("Ingrese el radio del circulo: "))
+    return(radio)
+
+def Calculo_Circulo(radio):
+    # Cálculo del diámetro
+    diametro = 2 * radio
+    # Cálculo de la circunferencia
+    circunferencia = 2 * math.pi * radio
+    # Cálculo del área
+    area = math.pi * radio**2
+    return(diametro,circunferencia,area)
+
+if __name__ == "__main__":
+    radio = Valor_Circulo()
+    diametro,circunferencia,area = Calculo_Circulo(radio)
+   
+    print("El resultado del diametro es: ",round(diametro,2), " , el resultado de la circunferencia es: "
+          ,round(circunferencia,2)," y el area es: ",round(area,2))
+
+  
+
+'''
+Para encontrar el diámetro, la circunferencia y el área 
+de un círculo en Python, necesitarás conocer el radio 
+del círculo. Una vez que tengas el radio, puedes utilizar 
+las siguientes fórmulas para calcular estas medidas:
+
+Diámetro: d = 2 * r
+Circunferencia: C = 2 * pi * r
+Área: A = pi * r^2
+
+Donde "d" es el diámetro, "C" es la circunferencia y "A" 
+es el área del círculo, y "r" es el radio del círculo. "pi" 
+es una constante matemática con un valor aproximado de 3.14.
+'''

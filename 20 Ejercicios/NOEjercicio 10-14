@@ -1,0 +1,34 @@
+#d
+from forex_python.converter import CurrencyRates
+TasaDeCambio = CurrencyRates()
+
+def Valor_dolar():
+    dolar = float(input("Ingrese el numero de dolares que desea convertir a Euros y Yen: "))
+    return(dolar)
+
+def Calculo_cambio(dolar):
+    euros = TasaDeCambio.get_rate('USD', 'EUR') * dolar
+    yen = TasaDeCambio.get_rate('USD', 'JPY') * dolar
+    return(euros,yen)
+
+if __name__ == "__main__":
+    dolar = Valor_dolar()
+    euros,yen = Calculo_cambio(dolar)
+   
+    print("El resultado en Euros es: ",round(euros,2), " Euros, y el resultado en Yens es: ",round(yen,2)," Yens.")
+
+
+
+
+
+'''
+Para convertir un valor en dólares a euros y yen en Python,
+puedes utilizar la librería forex-python. Primero, debes instalar 
+la librería ejecutando pip install forex-python en la consola.
+
+Luego, puedes utilizar la función CurrencyRates().get_rate() 
+para obtener la tasa de cambio entre dos monedas en una fecha específica
+Ten en cuenta que las tasas de cambio pueden variar diariamente, 
+por lo que es posible que los resultados obtenidos no sean exactos 
+si la fecha es diferente a la actual.
+'''

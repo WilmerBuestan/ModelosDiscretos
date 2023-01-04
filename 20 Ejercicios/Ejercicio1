@@ -1,0 +1,62 @@
+def LeerHoras():
+    '''
+    Funcion que lee n horas
+    Parametros:
+    ------------------------------------
+        - Esta funcion no tiene parametros
+    Retorna:
+    ------------------------------------
+    horas_trabajadas : int
+    '''
+    
+    # Pedir al usuario que ingrese el número de horas trabajadas
+    horas_trabajadas = input("Ingrese el número de horas trabajadas: ")
+
+    # Convertir el valor ingresado a un número (en este caso, un entero)
+    horas_trabajadas = int(horas_trabajadas)
+    return (horas_trabajadas)
+def LeerCostoHora():
+    '''
+    Funcion que lee el costo de la hora
+    Parametros:
+    ------------------------------------
+        - Esta funcion no tiene parametros
+    Retorna:
+    ------------------------------------
+    coste_por_hora : float
+    '''
+    
+    # Pedir al usuario que ingrese el coste por hora
+    coste_por_hora = input("Ingrese el coste por hora: ")
+
+    # Convertir el valor ingresado a un número (en este caso, un número con decimales)
+    coste_por_hora = float(coste_por_hora)
+    return(coste_por_hora)
+
+def CalcularSalario(horas_trabajadas, coste_por_hora):
+    '''
+    Funcion que calcula el salario
+    Parametros:
+    ------------------------------------
+        - horas_trabajadas
+        - coste_por_hora
+    Retorna:
+    ------------------------------------
+    salario_total : float
+    '''
+    
+    
+    # Calcular el salario total
+    salario_total = horas_trabajadas * coste_por_hora
+    return (salario_total)
+
+# Imprimir el salario total
+
+if __name__ == "__main__":
+    horas_trabajadas = LeerHoras()
+    coste_por_hora = LeerCostoHora()
+    
+   #Imprimo el resultado es: .....
+    print("El resultado es: ")
+
+    print(CalcularSalario(horas_trabajadas, coste_por_hora))

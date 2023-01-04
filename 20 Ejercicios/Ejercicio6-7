@@ -1,0 +1,30 @@
+import math
+def Valores_Cilindro():
+    '''
+    Funcion que lee los valores de lradio y altura
+    Parametros:
+    ------------------------------------
+        - Esta funcion no tiene parametros
+    Retorna:
+    ------------------------------------
+    radio, altura : float
+    '''        
+    radio = float(input("Ingrese el valor del radio del cilindro: "))
+    altura = float(input("Ingrese el valor de la altura del cilindro: "))
+    return(radio, altura)
+def Calcular_Area(radio,altura):
+    '''
+    Funcion que calcula el area
+    Parametros:
+    ------------------------------------
+        - radio, altura : float
+    Retorna:
+    ------------------------------------
+   area : float
+    '''    
+    area = 2 * math.pi * radio * altura + 2 * math.pi * radio**2
+    return(round(area,2))
+if __name__ == "__main__":
+    radio,altura = Valores_Cilindro()
+    print("El area del cilindro es: ")
+    print(Calcular_Area(radio,altura))

@@ -1,0 +1,45 @@
+def LeerVariable():
+    '''
+    Funcion que lee los valores de lado 1 y lado 2
+    Parametros:
+    ------------------------------------
+        - Esta funcion no tiene parametros
+    Retorna:
+    ------------------------------------
+    lado1, lado2 : float
+    '''    
+    lado1 = float(input("Ingrese el lado 1 del rectangulo: "))
+    lado2=float(input("Ingrese el lado 2 del rectangulo: "))
+    #retorna variable
+    return(lado1, lado2)
+def Calcular_Perimetro(lado1,lado2):
+    perimetro = (lado1 + lado2) * 2
+    return(round(perimetro,2))
+    '''
+    Funcion que calcula perimetro
+    Parametros:
+    ------------------------------------
+        - lado1 y lado 2 : float
+    Retorna:
+    ------------------------------------
+    Perimetro : float 
+    '''
+def Calcular_Area(lado1, lado2):    
+    area = lado1 * lado2
+    return (round(area,2))
+    '''
+    Funcion que calcula el area
+    Parametros:
+    ------------------------------------
+        - lado1 y lado 2 : float
+    Retorna:
+    ------------------------------------
+    Area : float   
+    '''
+#Imprimimos el resultado
+if __name__ == "__main__":
+    lado1, lado2 = LeerVariable()  
+    print("El resultado del perimetro del rectangulo es: ")
+    print(Calcular_Perimetro(lado1,lado2))    
+    print("El resultado del area del rectangulo es: ")
+    print(Calcular_Area(lado1,lado2))

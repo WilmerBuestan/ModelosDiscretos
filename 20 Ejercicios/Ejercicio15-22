@@ -1,0 +1,25 @@
+def Ingresar_Datos():
+    
+    # Solicitamos al usuario que ingrese la distancia recorrida y el tiempo transcurrido
+    distancia = float(input("Ingrese la distancia recorrida (en metros): "))
+    tiempo = float(input("Ingrese el tiempo transcurrido (en segundos): "))
+    return (distancia, tiempo)
+def Calculo(distancia,tiempo):
+    # Calculamos la velocidad
+    velocidad = distancia / tiempo
+    return(velocidad)
+
+if __name__ == "__main__":
+    distancia, tiempo = Ingresar_Datos()
+    velocidad = Calculo(distancia,tiempo)
+    
+    print("La velocidad del objeto ingesado es de: ",round(velocidad,2),"metros/segundos.")
+
+
+
+'''
+Para calcular la velocidad en Python, necesitarás conocer algunos datos:
+
+La distancia recorrida: esto se puede medir en cualquier unidad de longitud, como metros, kilómetros o millas.
+El tiempo transcurrido: esto se puede medir en cualquier unidad de tiempo, como segundos, minutos o horas.
+'''

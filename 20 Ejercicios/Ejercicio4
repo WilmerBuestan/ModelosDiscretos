@@ -1,0 +1,32 @@
+from math import sqrt
+def Valores_Piramide():
+    '''
+    Funcion que lee los valores de base y altura
+    Parametros:
+    ------------------------------------
+        - Esta funcion no tiene parametros
+    Retorna:
+    ------------------------------------
+    base, altura : float
+    '''    
+    altura = float(input("Ingrese la altura de la piramide: "))
+    base = float(input("Ingrese la base de la piramide: "))
+    return(altura, base)
+def Calcular_Arista(altura, base):
+    '''
+    Funcion que calcula la arista
+    Parametros:
+    ------------------------------------
+        - basae, altrua :float
+    Retorna:
+    ------------------------------------
+    arista_lateral : float
+    '''    
+    # Calcular la arista lateral de la pirámide
+    arista_lateral = sqrt(altura**2 + (base/2)**2)
+    return(round(arista_lateral,2))
+#imprimimos el resultado
+if __name__ == "__main__":
+    altura, base = Valores_Piramide()
+    print("La arista lateral de la piramide es: ")
+    print(Calcular_Arista(altura,base))

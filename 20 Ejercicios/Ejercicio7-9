@@ -1,0 +1,30 @@
+import math
+def Valores_Catetos():
+    '''
+    Funcion que lee los valores de los catetos
+    Parametros:
+    ------------------------------------
+        - Esta funcion no tiene parametros
+    Retorna:
+    ------------------------------------
+    cateto1, cateto2 : float
+    '''       
+    cateto1 = float(input("Ingrese el valor del cateto 1: "))
+    cateto2 = float(input("Ingrese el valor del cateto 2: "))  
+    return(cateto1, cateto2)
+def Calculo_Pitagoras(cateto1, cateto2):
+    '''
+    Funcion que calcula el teorema de pitagoras
+    Parametros:
+    ------------------------------------
+        - Esta funcion no tiene parametros
+    Retorna:
+    ------------------------------------
+    hipotenusa : float
+    '''       
+    hipotenusa = math.sqrt(cateto1 ** 2 + cateto2 ** 2)
+    return(round(hipotenusa,2))
+if __name__ == "__main__":
+    cateto1, cateto2 = Valores_Catetos()   
+    print("El resultado del teorema de pitagoras es: ")
+    print(Calculo_Pitagoras(cateto1, cateto2))

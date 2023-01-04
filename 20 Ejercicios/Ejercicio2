@@ -1,0 +1,39 @@
+def Valores_Inversiones():
+    '''
+    Funcion que lee los valores de inversion
+    Parametros:
+    ------------------------------------
+        - Esta funcion no tiene parametros
+    Retorna:
+    ------------------------------------
+    cantidad_invertir,interes_anual : float
+    numero_anos : int
+    '''
+    cantidad_invertir = float(input("Ingresa la cantidad a invertir: "))
+    interes_anual = float(input("Ingresa el interés anual: "))
+    interes_anual= interes_anual/100
+    numero_anos = int(input("Ingresa el número de años: "))
+    return(cantidad_invertir,interes_anual,numero_anos)
+
+def Calculo_Capital(cantidad_invertir,interes_anual,numero_anos):
+    '''
+    Funcion que calcula los valores de inversion
+    Parametros:
+    ------------------------------------
+        - cantidad_invertir,interes_anual,numero_anos
+    Retorna:
+    ------------------------------------
+    capital_obtenido : float
+    
+    '''    
+    capital_obtenido = cantidad_invertir * (1 + interes_anual) ** numero_anos
+    return(round(capital_obtenido,2))
+
+# Imprime el capital calculado
+if __name__ == "__main__":
+    cantidad_invertir,interes_anual,numero_anos = Valores_Inversiones()
+   
+    print("El capital obtenido es: ")
+
+    print(Calculo_Capital(cantidad_invertir,interes_anual,numero_anos))
+

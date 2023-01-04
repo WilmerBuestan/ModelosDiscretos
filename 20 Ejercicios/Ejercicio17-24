@@ -1,0 +1,13 @@
+def Ingresar_Datos():
+    base = float(input("ingresar el numero base: "))
+    exponente = float(input("Ingresar el numero que sera exponente: "))
+    return(base, exponente)
+def Calculo(base,exponente):
+    resultado = base**exponente
+    return(resultado)
+
+if __name__ == "__main__":
+    base,exponente = Ingresar_Datos()
+    resultado = Calculo(base,exponente)
+    
+    print("El resultado es: ",round(resultado,2))

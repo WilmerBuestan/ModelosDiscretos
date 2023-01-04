@@ -1,0 +1,34 @@
+def Valor_libras():
+    '''
+    Funcion que lee el valor de las libras
+    Parametros:
+    ------------------------------------
+        - Esta funcion no tiene parametros
+    Retorna:
+    ------------------------------------
+   libras : float
+    '''        
+    libras = float(input("Ingrese el numero de libras que desea saber su valor en Kilos y gramos: "))  
+    return(libras)
+def Calculo_Valores(libras):
+    '''
+    Funcion que calcula los kilogramos y gramos
+    Parametros:
+    ------------------------------------
+         - libras : float
+    Retorna:
+    ------------------------------------
+   kilogramos, gramos : float
+    '''      
+    # Luego conviértelo a kilogramos usando la conversión de 1 libra = 0.453592 kilogramos
+    kilogramos = libras * 0.453592
+    # Finalmente, convierte los kilogramos restantes a gramos usando la conversión de 1 kilogramo = 1000 gramos
+    gramos = kilogramos * 1000
+    return (kilogramos,gramos)
+#imprimimos el resultado
+if __name__ == "__main__":
+    libras = Valor_libras()
+    kilogramos,gramos = Calculo_Valores(libras)   
+    print("El resultado en Kilogramos es: ",round(kilogramos,2), " kilogramos, y el resultado en gramos es: ",round(gramos,2)," gramos.")
+
+  

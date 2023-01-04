@@ -1,0 +1,28 @@
+def Ingresar_Datos():
+    Angulo1=float(input("Ingresar el valor del primer angulo: "))
+    Angulo2=float(input("Ingresar el valor del seguundo angulo: "))
+    return(Angulo1,Angulo2)
+
+def Calculo(Angulo1,Angulo2):
+    
+    # Calculamos el tercer ángulo
+    Angulo3 = 180 - Angulo1 - Angulo2
+    return(Angulo3)
+
+if __name__ == "__main__":
+    Angulo1,Angulo2 = Ingresar_Datos()
+    Angulo3 = Calculo(Angulo1,Angulo2)
+    
+    print("El resultado es: ",round(Angulo3,2))
+
+
+
+
+'''
+Para encontrar el tercer ángulo de un triángulo en Python, 
+primero necesitas conocer la suma de los ángulos de un triángulo. 
+Los ángulos de un triángulo siempre suman 180 grados.
+
+Por lo tanto, puedes encontrar el tercer ángulo simplemente 
+restando la suma de los dos ángulos que ya conoces de 180 grados
+'''

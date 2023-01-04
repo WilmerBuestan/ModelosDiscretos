@@ -1,0 +1,27 @@
+def Ingresar_Datos():
+    dias = int(input("Ingresar los dias a convertir en anio, semanas y dias"))
+    return(dias)
+
+def Calculo(dias):
+    # Convertir días en años, semanas y días
+    anios = dias // 365
+    semanas = (dias % 365) // 7
+    dias_restantes = dias % 7
+    return(anios,semanas,dias_restantes)
+
+if __name__ == "__main__":
+    dias = Ingresar_Datos()
+    anios,semanas,dias_restantes = Calculo(dias)
+    
+    print("En anios, semanas y dias quedaria : ",anios," anios, ",semanas," semanas, ",dias_restantes," dias.")
+
+
+'''
+Donde dias es el número de días que quieres convertir y anos, 
+semanas y dias_restantes son el resultado en años, semanas y
+días, respectivamente.
+Este código pedirá al usuario que ingrese el número de días, lo convertirá en años, semanas y días y luego imprimirá el resultado.
+
+Ten en cuenta que estas fórmulas asumen que cada año tiene 365 días y cada semana tiene 7 días. Si quieres ser más preciso,
+puedes utilizar fórmulas que tenga en cuenta los años bisiestos y los años de 366 días.
+'''

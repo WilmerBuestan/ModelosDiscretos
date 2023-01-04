@@ -1,0 +1,23 @@
+import math
+
+def Ingresar_Datos():
+    # Ingresar el número cuyo la raíz cuadrada quieres calcular
+    numero = float(input("Ingresar el numero al cual se quiere calcular la raiz: "))
+    return(numero)
+def Calculo(numero):
+    
+    # Calcular la raíz cuadrada del número
+    resultado = math.sqrt(numero)
+    return(resultado)
+
+if __name__ == "__main__":
+    numero = Ingresar_Datos()
+    resultado = Calculo(numero)
+    
+    print("El resultado es: ",round(resultado,2))
+
+'''
+Es importante tener en cuenta que la función sqrt() devuelve un valor de tipo float,
+por lo que si quieres el resultado en formato int debes usar la función int() para 
+convertir el resultado a entero.
+'''

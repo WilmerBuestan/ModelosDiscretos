@@ -1,0 +1,39 @@
+def Ingresar_datos():
+    numero1 = float(input("Ingresa el primer número: "))
+    numero2 = float(input("Ingresa el segundo número: "))
+    return(numero1, numero2)
+def Calculo_Operaciones(numero1,numero2):
+    
+    # Suma
+    suma = numero1 + numero2
+
+    # Resta
+    resta = numero1 - numero2
+
+    # Multiplicación
+    multiplicacion = numero1 * numero2
+
+    # División
+    division = numero1 / numero2
+
+    # Módulo (resto de la división)
+    modulo = numero1 % numero2
+
+    # Potencia
+    potencia = numero1 ** numero2
+    
+    return(suma,resta,multiplicacion,division,modulo,potencia)
+
+if __name__ == "__main__":
+    numero1,numero2 = Ingresar_datos()
+    suma,resta,multiplicacion,division,modulo,potencia = Calculo_Operaciones(numero1,numero2)
+   
+    print("El resultado de la suma es: ",suma)
+    print("El resultado de la resta es: ",resta)
+    print("El resultado de la multiplicacion es: ",multiplicacion)
+    print("El resultado de la division es: ",division)
+    print("El resultado de la modulo es: ",modulo)
+    print("El resultado de la potencia es: ",potencia)
+    
+
+  

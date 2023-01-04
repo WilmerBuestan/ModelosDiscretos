@@ -1,0 +1,26 @@
+def Ingresar_datos():
+    # Pedir al usuario que ingrese la longitud y el ancho del rectángulo
+    longitud = float(input("Ingresa el largo del rectangulo: "))
+    ancho = float(input("Ingresa el ancho del rectangulo: "))
+    return(longitud,ancho)
+
+def Calculo_Rectangulo(longitud,ancho):
+    # Calcular el perímetro del rectángulo
+    perimetro = 2 * (longitud + ancho)
+    return(perimetro)
+
+if __name__ == "__main__":
+    longitud,ancho = Ingresar_datos()
+    perimetro = Calculo_Rectangulo(longitud,ancho)
+       
+    print("El perimetro del rectangulo es: ",perimetro)
+
+
+'''
+Para encontrar el perímetro de un rectángulo en Python, 
+primero debemos solicitar al usuario que ingrese la longitud 
+y el ancho del rectángulo. Luego podemos utilizar estos valores
+para calcular el perímetro utilizando la siguiente fórmula:
+
+perímetro = 2 * (longitud + ancho)
+'''

@@ -1,0 +1,35 @@
+import math
+def Valores_Trapezoid():
+    '''
+    Funcion que lee los valores de los cuatro lados
+    Parametros:
+    ------------------------------------
+        - Esta funcion no tiene parametros
+    Retorna:
+    ------------------------------------
+    a,b,c,d : float
+    '''        
+    a = float(input("Ingrese el valor del lado 1: "))
+    b = float(input("Ingrese el valor del lado 2: "))
+    c = float(input("Ingrese el valor del lado 3: "))
+    d = float(input("Ingrese el valor del lado 4: "))
+    return(a,b,c,d)
+def Calcular_Area(a, b, c, d):
+  '''
+    Funcion que calcula la altura y con es valor calcular el area
+    Parametros:
+    ------------------------------------
+        - Esta funcion no tiene parametros
+        a,b,c,d : float
+    Retorna:
+    ------------------------------------
+    area : float
+  '''      
+  h = math.sqrt((c-a)**2 + (d-b)**2)
+  area = (a + b) * h / 2
+  return (round(area,2))
+if __name__ == "__main__":
+    a,b,c,d = Valores_Trapezoid()   
+    print("El area del trapezoide es: ")
+    print(Calcular_Area(a,b,c,d))
+

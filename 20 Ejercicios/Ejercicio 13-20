@@ -1,0 +1,25 @@
+def Ingresar_Datos():
+    
+    longitud_cm = float(input("Ingrese la longitud en centimetros: "))
+    return(longitud_cm)
+def Calculo(longitud_cm):
+    
+    longitud_m = longitud_cm / 100
+    longitud_km = longitud_m / 1000
+    return(longitud_m,longitud_km)
+
+if __name__ == "__main__":
+    longitud_cm = Ingresar_Datos()
+    longitud_m,longitud_km = Calculo(longitud_cm)
+       
+    print("La longitud en metros es: ",longitud_m)
+    print("La longitud en Kilometros es: ",longitud_km)
+
+
+
+'''
+
+
+
+
+'''
