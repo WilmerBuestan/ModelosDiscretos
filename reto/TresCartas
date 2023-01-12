@@ -1,0 +1,44 @@
+import big_o
+import time
+
+def genera_vocales(A, B, prev):
+    '''
+    Funcion que que cantidad de a y b existe
+    Parametros:
+    ------------------------------------
+        - Esta funcion no tiene parametros
+    Retorna:
+    ------------------------------------
+    A, B : int
+    '''   
+    if A == 0 and B == 0:
+    
+        return ""
+    elif A > 0 and prev != 'a':
+        # si queremos agregar a y la anterior no es a
+        return "a" + genera_vocales(A-1, B, 'a')
+    elif B > 0 and prev != 'b':
+        # si queremos agregar b y la anterior no es b
+        return "b" + genera_vocales(A, B-1, 'b')
+    elif A > 0:
+        # si queremos agregar b pero la anterior es a
+        return "a" + genera_vocales(A-1, B, 'a')
+    else:
+        #si uremos agregar a y la anterior es b
+        return "b" + genera_vocales(A, B-1, 'b')
+
+
+import time
+
+if __name__ == "__main__":
+    A = int(input("Ingrear el numero de vocales a: "))
+    B = int(input("Ingrear el numero de letras b: "))
+    if (A<=0 or B<=0):
+        print("A and B must be greater than zero")
+    else:
+        start_time = time.time()
+        result = genera_vocales(A, B, ' ')
+        end_time = time.time()
+        print("Result:", result)
+        tiempoCalculo = end_time - start_time
+        print("Execution time:", "{:.6e}".format(tiempoCalculo),"(sec)")

@@ -1,0 +1,50 @@
+
+import math
+import big_o
+from datetime import datetime
+def Ingresar_tiempor ():
+    '''
+    Funcion que ingresa los valores de las horas
+    Parametros:
+    ------------------------------------
+        - Esta funcion no tiene parametros
+    Retorna:
+    ------------------------------------
+    E , L : datetime
+    '''    
+    E = (input("Ingrese la hora de entrada del vehiculo en el estacionamiento de Bill (ejemplo 07:00): "))
+    L = (input("Ingrese la hora de salida del vehiculo en el estacionamiento de Bill (ejemplo 17:00): "))    
+    return (E, L)
+
+def calcular_multa(E, L):
+    '''
+    Funcion que los valores de las horas en el estacionamiento
+    Parametros:
+    ------------------------------------
+    E , L : datetime
+    Retorna:
+    ------------------------------------
+    costo_total : int
+    '''    
+    tarifa_entrada = 2
+    tarifa_hora_1 = 3
+    tarifa_hora_siguiente = 4
+
+    E = datetime.strptime(E, '%H:%M')
+    L = datetime.strptime(L, '%H:%M')
+#trasformamos los segundos a horas
+    tiempo_estacionado = (L-E).total_seconds()/3600 
+#redondeamos al numero entero positivo mas alto
+    horas_estacionado = int(math.ceil(tiempo_estacionado))
+    #el costo final seria TARIFA DE ENTRADA + (TARIFA DE PRIMERA HORA + (HORAS DE ESTACIONAMIENTO -1)
+    # x TARIFA DE HORAS LUEGO DE LA PRIMERA)
+    costo_total = tarifa_entrada + (tarifa_hora_1 + (horas_estacionado - 1) * tarifa_hora_siguiente)
+    return costo_total
+
+
+if __name__ == "__main__":
+    
+    E,L = Ingresar_tiempor()
+    costo_total = calcular_multa(E,L)
+    print("El costo total de la multa es: $" + str(costo_total))
+    

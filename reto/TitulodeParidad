@@ -1,0 +1,27 @@
+def IngresarNum ():
+    '''
+    Funcion que ingresar el numero al cual vamos a encontrar la potencia mas alta
+    Parametros:
+    ------------------------------------
+        - Esta funcion no tiene parametros
+    Retorna:
+    ------------------------------------
+    E , L : datetime
+    '''   
+    numero = int(input("Ingrear el numero (N) al cual vamos a econtrar la potencia mas alta de dos que divide a N: "))
+    return numero
+# toma un argumento entero positivo n, y devuelve la mayor potencia de 2 que divide a n.
+def potenciaMasAlta(n: int) -> int:
+#se hace uso de un ciclo for, donde se verifica por cada i si 2^i es mayor a n, si es 
+#mayor se detiene, si no se verifica si n es divisible entonces se guarda el valor de i en masAlto.
+    masAlto = 0
+    for i in range(n):
+        if 2**i > n:
+            break
+        if n % (2**i) == 0:
+            masAlto = i
+    
+    return masAlto
+if __name__ == "__main__":
+    numero=IngresarNum()
+    print("la potencia más alta de 2 que divide a N es: ",potenciaMasAlta(numero))

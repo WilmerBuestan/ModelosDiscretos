@@ -1,0 +1,53 @@
+
+import big_o
+def numeroUnico(A):
+    '''
+    Funcion que ingresa el numero de elementos de la matriz y sus elementos
+    Parametros:
+    ------------------------------------
+        - Esta funcion no tiene parametros
+    Retorna:
+    ------------------------------------
+    num, i
+    '''   
+    vecesRepetido = {}
+    for i, num in enumerate(A):
+        if num in vecesRepetido:
+            vecesRepetido[num] += 1
+        else:
+            vecesRepetido[num] = 1
+    
+    for i, num in enumerate(A):
+        if vecesRepetido[num] == 1:
+            return (num, i)
+    return None
+
+def IngresoMatriz(n):
+    '''
+    Funcion que ingresa la matriz
+    Parametros:
+    ------------------------------------
+        - n
+    Retorna:
+    ------------------------------------
+    matriz
+    '''   
+    matriz = []
+    for i in range(n):
+        matriz.append(int(input("Ingresa el elemento {}: ".format(i))))
+    return matriz
+
+
+if __name__ == "__main__":
+    repite=[]
+    n = int(input("Ingresa el número de elementos en la matriz A: "))
+    A = IngresoMatriz(n)
+    result = numeroUnico(A)
+    print("El primer número único en A es: {} y se encuentra en la posición {}".format(result[0], result[1]))
+
+
+    positive_int_generator = lambda n: repite
+    
+    best, others= big_o.big_o(numeroUnico,positive_int_generator)
+    print(best)
+    

@@ -1,0 +1,26 @@
+import big_o
+def subcadena_similares(cadena):
+    '''
+    Funcion que ingresa los valores de las horas
+    Parametros:
+    ------------------------------------
+        - Esta funcion no tiene parametros
+    Retorna:
+    ------------------------------------
+    E , L : datetime
+    '''   
+    indice = cadena.find("e")
+    if indice != -1:
+        izquierda = cadena[:indice]
+        derecha = cadena[indice + 1:]
+        print("Subcadena izquierda: ", izquierda)
+        print("Subcadena derecha: ", derecha)
+        return indice
+    return 0
+
+if __name__ == "__main__":
+
+    e = input("Ingresa la frase sin espacios: ")
+   
+    print(subcadena_similares(e))
+
