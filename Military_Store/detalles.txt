@@ -1,0 +1,6 @@
+2;1;Monos tácticos;6;15;90.0
+3;1;Pantalones tácticos;59;199;11741.0
+4;1;Camisetas tácticas;56;50;2800.0
+5;1;Azucar;100;50;5000.0
+6;1;arroz;10;1;10.0
+6;2;Azucar;100;10;1000.0

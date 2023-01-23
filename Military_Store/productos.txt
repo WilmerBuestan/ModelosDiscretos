@@ -1,0 +1,55 @@
+1;Camisetas tácticas;56;38
+2;Pantalones tácticos;59;91
+3;Chaquetas tácticas;18;31
+4;Chalecos tácticos;6;25
+5;Monos tácticos;6;59
+6;Ropa interior táctica;47;88
+7;Calzado militar;27;65
+8;Gorras y sombreros militares;49;40
+9;Mascarillas y buff;31;61
+10;Cinturones tácticos;35;81
+11;Mochilas y mochilas tácticas;16;63
+12;Fundas para armas;42;29
+13;Guantes tácticos;22;75
+14;Ropa de camuflaje;12;67
+15;Ropa de garantía térmica;11;34
+16;Ropa de protección balística;58;97
+17;Ropa de protección NBC (Nuclear, Biológico, Químico);50;26
+18;Ropa de supervivencia;41;35
+19;Ropa de alta visibilidad;47;46
+20;Accesorios como cintas para el pelo, gafas;49;98
+21;Uniforme jaguar ;47;100
+22;Uniforme de cultura física ;13;97
+23;Uniforme de gala ;16;88
+24;Uniforme de gran parada ;23;82
+25;Uniforme de cultura física ESMIL ;36;72
+26;Suspender ;19;70
+27;Pistolera ;17;95
+28;Reloj ;39;59
+29;Cadena de identificación ;15;68
+30;Jockey ;56;29
+31;Camiseta kaki ;7;40
+32;Camisetas de deporte ;55;54
+33;Sudaderas de deporte;40;26
+34;Jocker de deporte con rango ;38;80
+35;Buzo táctico ;47;66
+36;Chompa jaguar ;57;30
+37;Chompa impermeable ;31;76
+38;Buzo verde ;54;58
+39;Camiseta blanca;38;68
+40;Pantalón de caballería ;20;86
+41;Botas de tubo ;40;46
+42;Espuelas;56;67
+43;Gorra trickot ;50;25
+44;Cartucheras ;60;70
+45;Cinturón paracaidista ;55;63
+46;Parches de cursos ;49;65
+47;Parches de armas ;13;94
+48;Parches de rangos ;54;25
+49;Parches sangre ;10;97
+50;Parches de nombre ;57;27
+51;Pareches de unidades ;60;61
+52;Medias verdes;6;94
+53;Medias grises ;57;82
+54;Ligas de botas;23;3
+55;Chaleco tactico Jaguar;122;10

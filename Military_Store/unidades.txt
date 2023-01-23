@@ -1,0 +1,5 @@
+1;I División del Ejército "Shyris" (Cuartel General Quito)
+2;II División del Ejército "Libertad" (Cuartel General Guayaquil )
+3;III División de Ejército "Tarqui" (Cuartel General Cuenca )
+4;IV División del Ejército "Amazonas" (Cuartel General El Coca )
+5;Unidades independientes

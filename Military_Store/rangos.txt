@@ -1,0 +1,17 @@
+1;Soldado;SLDO
+2;Cabo Segundo;CBOS
+3;Cabo Primero;CBOS
+4;Sargento Segundo;SGOS 
+5;Sargento Primero;SGOP
+6;SubOficial Segundo;SGOS 
+7;SubOficial Primero;SGOP 
+8;SubOficial Mayor;SGOM
+9;SubTeniene;SUBT
+10;Teniene;TNTE
+11;Capitan;CAPT
+12;Mayor;MAYO
+13;Teniente Coronel;TCRN
+14;Coronel;CRNL
+15;General de Brigada;GRAL
+16;General de Division;GRAL
+17;General del Ejercito;GRAL
